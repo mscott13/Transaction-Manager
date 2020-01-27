@@ -1,0 +1,20 @@
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Transaction Manager.exe.config
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Transaction Manager.exe
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Transaction Manager.pdb
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager.csprojAssemblyReference.cache
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\MainWindow.g.cs
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\App.g.cs
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager_MarkupCompile.cache
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\MainWindow.baml
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager.g.resources
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction_Manager.Properties.Resources.resources
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager.csproj.GenerateResource.cache
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager.exe
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager.pdb
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Resources\UserAddedItemTemplate_16x.png
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Resources\Exit_16x.png
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Resources\InformationSymbol_16x.png
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager_Content.g.cs
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager_MarkupCompile.lref
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Resources\Open_16x.png
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Resources\ComputerSystem_16x.png

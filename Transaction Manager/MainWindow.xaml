@@ -1,0 +1,90 @@
+﻿<Window x:Class="Transaction_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Transaction_Manager"
+        mc:Ignorable="d"
+        
+        Title="Transaction Manager - Superior Gas Station" Height="687" Width="1198" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+
+        <Menu FontFamily="Microsoft Sans Serif" Padding="3" FontSize="13.4" DockPanel.Dock="Top">
+            <MenuItem Header="_User">
+                <MenuItem x:Name="menu_defaultSalesman" Header="Change Default _Salesman" InputGestureText="Ctrl+S">
+                    <MenuItem.Icon>
+                        <Image Source="pack://application:,,,/Resources/UserAddedItemTemplate_16x.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Logout" x:Name="menu_logout">
+                    <!--<MenuItem.Icon>
+                        <Image Source="pack://application:,,,/Resources/Exit_16x.png"/>
+                    </MenuItem.Icon>-->
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Customer Information"></MenuItem>
+            <MenuItem Header="_Inventory"></MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem x:Name="menu_programInfo" Header="Program Information">
+                    <MenuItem.Icon>
+                        <Image Source="pack://application:,,,/Resources/InformationSymbol_16x.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar Padding="5">
+                <Button Width="Auto" Height="Auto" x:Name="btnNewTransaction" ToolTip="Starts a new transaction" Margin="5,0,0,0">
+                    <DockPanel>
+                        <Image DockPanel.Dock="Top" Width="50" Source="./Resources/invoice.png"/>
+                        <Label Padding="0" DockPanel.Dock="Bottom" FontSize="12">New Transaction</Label>
+                    </DockPanel>
+                </Button>
+                <Separator />
+                <Button  Height="Auto" x:Name="btnDailySales" ToolTip="Sales history" Margin="5,0,0,0">
+                    <DockPanel>
+                        <Image Height="50" DockPanel.Dock="Top" Source="./Resources/calendar.png" Margin="5,0"/>
+                        <Label Padding="0" DockPanel.Dock="Bottom" FontSize="12">Sales History</Label>
+                    </DockPanel>
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+
+        <StatusBar FontFamily="Microsoft Sans Serif" Height="Auto" DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <Label FontSize="12">User ID: Mark Scott</Label>
+            </StatusBarItem>
+            <Separator Background="#FFB8B8B8" Height="20" />
+            <StatusBarItem>
+                <Label FontSize="12">
+                    <DockPanel>
+                        <Image Height="13" Source="pack://application:,,,/Resources/ComputerSystem_16x.png" />
+                        <TextBlock Margin="4,0,5,0.3">Register A1</TextBlock>
+                    </DockPanel>
+                </Label>
+            </StatusBarItem>
+            <Separator Background="#FFB8B8B8" Height="20" />
+            <StatusBarItem>
+                <TextBlock Margin="4,0,5,0.3">Trx count: 0,</TextBlock>
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock >Today's total: $0.00</TextBlock>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <StackPanel Margin="0,0,5,0" Orientation="Horizontal">
+                    <Button x:Name="btnOpenDrawer" Cursor="Hand" Padding="2" Click="btnOpenDrawer_Click">
+                        <DockPanel>
+                            <Image Height="10" Source="pack://application:,,,/Resources/Open_16x.png" />
+                            <TextBlock Margin="4,0,5,0.3" FontSize="12" Foreground="#FF005AB4">Open Cash Drawer</TextBlock>
+                        </DockPanel>
+                    </Button>
+                </StackPanel>
+            </StatusBarItem>
+        </StatusBar>
+
+        <Grid>
+            
+        </Grid>
+
+    </DockPanel>
+</Window>
