@@ -3,35 +3,45 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns:local="clr-namespace:Transaction_Manager"
         mc:Ignorable="d"
         
         Title="Transaction Manager - Superior Gas Station" Height="687" Width="1198" WindowStartupLocation="CenterScreen">
-    <DockPanel>
+    <DockPanel LastChildFill="True">
 
-        <Menu FontFamily="Microsoft Sans Serif" Padding="3" FontSize="13.4" DockPanel.Dock="Top">
-            <MenuItem Header="_User">
-                <MenuItem x:Name="menu_defaultSalesman" Header="Change Default _Salesman" InputGestureText="Ctrl+S">
-                    <MenuItem.Icon>
-                        <Image Source="pack://application:,,,/Resources/UserAddedItemTemplate_16x.png" />
-                    </MenuItem.Icon>
-                </MenuItem>
-                <MenuItem Header="Logout" x:Name="menu_logout">
-                    <!--<MenuItem.Icon>
+        <Border BorderThickness="0,1" BorderBrush="#a8a8a8" DockPanel.Dock="Top">
+            <Menu FontFamily="Microsoft Sans Serif" Padding="3" FontSize="12.4" DockPanel.Dock="Top">
+                <Menu.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FFD4D4D4" Offset="1"/>
+                        <GradientStop Color="#FFF7F7F7" Offset="0.4"/>
+                    </LinearGradientBrush>
+                </Menu.Background>
+                <MenuItem Header="_User">
+                    <MenuItem x:Name="menu_defaultSalesman" Header="Change Default _Salesman" InputGestureText="Ctrl+S">
+                        <MenuItem.Icon>
+                            <Image Source="pack://application:,,,/Resources/UserAddedItemTemplate_16x.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Logout" x:Name="menu_logout">
+                        <!--<MenuItem.Icon>
                         <Image Source="pack://application:,,,/Resources/Exit_16x.png"/>
                     </MenuItem.Icon>-->
+                    </MenuItem>
                 </MenuItem>
-            </MenuItem>
-            <MenuItem Header="_Customer Information"></MenuItem>
-            <MenuItem Header="_Inventory"></MenuItem>
-            <MenuItem Header="_Help">
-                <MenuItem x:Name="menu_programInfo" Header="Program Information">
-                    <MenuItem.Icon>
-                        <Image Source="pack://application:,,,/Resources/InformationSymbol_16x.png"/>
-                    </MenuItem.Icon>
+                <MenuItem Header="_Customer Information"></MenuItem>
+                <MenuItem Header="_Inventory"></MenuItem>
+                <MenuItem Header="_Help">
+                    <MenuItem x:Name="menu_programInfo" Header="Program Information">
+                        <MenuItem.Icon>
+                            <Image Source="pack://application:,,,/Resources/InformationSymbol_16x.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
                 </MenuItem>
-            </MenuItem>
-        </Menu>
+            </Menu>
+        </Border>
         <ToolBarTray DockPanel.Dock="Top">
             <ToolBar Padding="5">
                 <Button Width="Auto" Height="Auto" x:Name="btnNewTransaction" ToolTip="Starts a new transaction" Margin="5,0,0,0">
@@ -50,25 +60,27 @@
             </ToolBar>
         </ToolBarTray>
 
-        <StatusBar FontFamily="Microsoft Sans Serif" Height="Auto" DockPanel.Dock="Bottom">
+
+
+        <StatusBar FontFamily="Microsoft Sans Serif" Height="27" DockPanel.Dock="Bottom">
             <StatusBarItem>
-                <Label FontSize="12">User ID: Mark Scott</Label>
+                <Label FontSize="10">User ID: Mark Scott</Label>
             </StatusBarItem>
-            <Separator Background="#FFB8B8B8" Height="20" />
+            <Separator Background="#FFB8B8B8" Height="11.6" />
             <StatusBarItem>
-                <Label FontSize="12">
+                <Label FontSize="10">
                     <DockPanel>
-                        <Image Height="13" Source="pack://application:,,,/Resources/ComputerSystem_16x.png" />
+                        <Image Height="13" Source="pack://application:,,,/Resources/ComputerSystem_16x.png" VerticalAlignment="Center" HorizontalAlignment="Center" />
                         <TextBlock Margin="4,0,5,0.3">Register A1</TextBlock>
                     </DockPanel>
                 </Label>
             </StatusBarItem>
-            <Separator Background="#FFB8B8B8" Height="20" />
+            <Separator Background="#FFB8B8B8" Height="12" />
             <StatusBarItem>
-                <TextBlock Margin="4,0,5,0.3">Trx count: 0,</TextBlock>
+                <TextBlock FontSize="10" Margin="4,0,5,0.3">Trx count: 0,</TextBlock>
             </StatusBarItem>
             <StatusBarItem>
-                <TextBlock >Today's total: $0.00</TextBlock>
+                <TextBlock FontSize="10">Today's total: $0.00</TextBlock>
             </StatusBarItem>
             <StatusBarItem HorizontalAlignment="Right">
                 <StackPanel Margin="0,0,5,0" Orientation="Horizontal">
@@ -82,9 +94,24 @@
             </StatusBarItem>
         </StatusBar>
 
-        <Grid>
-            
-        </Grid>
-
+        <StackPanel  DockPanel.Dock="Top" Orientation="Vertical" Background="#FF6C6C6C">
+            <DockPanel LastChildFill="False">
+                <Label DockPanel.Dock="Left" Content="Current Transactions for: " Margin="0" FontSize="15" Foreground="White" />
+                <DatePicker SelectedDate="{x:Static sys:DateTime.Now}" SelectedDateFormat="Long" BorderBrush="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </DockPanel>
+        </StackPanel>
+        <DataGrid  AutoGenerateColumns="False" ColumnWidth="Auto" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto"
+      ScrollViewer.HorizontalScrollBarVisibility="Visible">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Doc. No" HeaderStringFormat="" MinWidth="80"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Date" MinWidth="120"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Cust. #" Width="80"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Customer Name" HeaderStringFormat="" Width="100"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Address" Width="250"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Document Total" Width="Auto"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Points Earned" Width="Auto"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Remarks" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </DockPanel>
 </Window>
