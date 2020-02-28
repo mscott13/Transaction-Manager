@@ -27,12 +27,21 @@ namespace Transaction_Manager
 
         private void btnOpenDrawer_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void btnNewTransaction_Click(object sender, RoutedEventArgs e)
         {
+            Transaction transaction = new Transaction();
+            transaction.docNumber = 19384;
+            transaction.date = DateTime.Now;
+            transaction.customerNumber = 6100001;
+            transaction.customerName = "Mark Scott";
+            transaction.address = "Shaw Park Heights, Ocho Rios, St.Ann";
+            transaction.documentTotal = 3100;
+            transaction.remarks = "This is a test to see how datagrid will work";
 
+            TrxDataGrid.Items.Add(transaction);
         }
     }
 }
