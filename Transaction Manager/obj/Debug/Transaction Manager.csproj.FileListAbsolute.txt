@@ -18,3 +18,19 @@ C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Tr
 C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager_MarkupCompile.lref
 C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Resources\Open_16x.png
 C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Resources\ComputerSystem_16x.png
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\NewTransaction.g.cs
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Google.Protobuf.dll
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\MySql.Data.dll
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Renci.SshNet.dll
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\System.Data.SQLite.dll
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Google.Protobuf.xml
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\MySql.Data.xml
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\Renci.SshNet.xml
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\System.Data.SQLite.xml
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\NewTransaction.baml
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Transaction Manager.csproj.CopyComplete
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Login.g.cs
+C:\Users\amark\source\repos\Transaction Manager\Transaction Manager\obj\Debug\Login.baml

@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AddUser_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddUser_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ComputerSystem_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ComputerSystem_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,6 +145,9 @@
   <data name="Open_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Open_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Search_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="UploadDatabase_16x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UploadDatabase_16x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -153,5 +159,8 @@
         hqBjng0ecvsv6As4gFKKiOjUaPC4/MCc88fMg/y2/RJgwf6ORwHyp736S8CKcfRLhXAAehq3nqvN1ygA
         AAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="_lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

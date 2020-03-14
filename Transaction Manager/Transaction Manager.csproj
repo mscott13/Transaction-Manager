@@ -43,6 +43,15 @@
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
+    <Reference Include="Isopoh.Cryptography.Argon2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9014340f40f5d160, processorArchitecture=MSIL">
+      <HintPath>..\packages\Isopoh.Cryptography.Argon2.1.1.3\lib\net472\Isopoh.Cryptography.Argon2.dll</HintPath>
+    </Reference>
+    <Reference Include="Isopoh.Cryptography.Blake2b, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9014340f40f5d160, processorArchitecture=MSIL">
+      <HintPath>..\packages\Isopoh.Cryptography.Blake2b.1.1.3\lib\net472\Isopoh.Cryptography.Blake2b.dll</HintPath>
+    </Reference>
+    <Reference Include="Isopoh.Cryptography.SecureArray, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9014340f40f5d160, processorArchitecture=MSIL">
+      <HintPath>..\packages\Isopoh.Cryptography.SecureArray.1.1.3\lib\net472\Isopoh.Cryptography.SecureArray.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
@@ -61,6 +70,16 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.1\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.3.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml" />
@@ -84,6 +103,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -92,15 +115,29 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Class Definitions\Gct.cs" />
+    <Compile Include="Class Definitions\Inventory.cs" />
+    <Compile Include="Class Definitions\InventoryLocation.cs" />
+    <Compile Include="Class Definitions\Item.cs" />
     <Compile Include="Class Definitions\Transaction.cs" />
     <Compile Include="Class Definitions\TransactionDetail.cs" />
     <Compile Include="Database\Sales.cs" />
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="NewTransaction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NewTransaction.xaml.cs">
+      <DependentUpon>NewTransaction.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -119,9 +156,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Database\TransactionMgr.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -133,15 +167,19 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\calendar.png" />
+    <Resource Include="Resources\AddUser_16x_24.bmp" />
+    <Resource Include="Resources\AddUser_16x.png" />
     <Content Include="Resources\ComputerSystem_16x.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resources\medical-history.png" />
     <Resource Include="Resources\invoice.png" />
+    <Resource Include="Resources\lock.png" />
     <Content Include="Resources\Open_16x.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\UploadDatabase_16x.png" />
+    <Resource Include="Resources\Search_16x.png" />
     <Content Include="Resources\UserAddedItemTemplate_16x.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

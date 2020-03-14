@@ -63,6 +63,26 @@ namespace Transaction_Manager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("_lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AddUser_16x {
+            get {
+                object obj = ResourceManager.GetObject("AddUser_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ComputerSystem_16x {
             get {
                 object obj = ResourceManager.GetObject("ComputerSystem_16x", resourceCulture);
@@ -96,6 +116,16 @@ namespace Transaction_Manager.Properties {
         internal static System.Drawing.Bitmap Open_16x {
             get {
                 object obj = ResourceManager.GetObject("Open_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_16x {
+            get {
+                object obj = ResourceManager.GetObject("Search_16x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
